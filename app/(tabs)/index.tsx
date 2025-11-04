@@ -71,11 +71,11 @@ export default function Index() {
         type: "image/jpeg",
         name: "upload.jpg",
       } as any);
-      data.append("upload_preset", "expo-image-upload");
-      data.append("cloud_name", "dyxrfm7fh");
+      data.append("upload_preset", "your-upload-preset");
+      data.append("cloud_name", "your-cloud-name");
 
       const res = await fetch(
-        "https://api.cloudinary.com/v1_1/dyxrfm7fh/image/upload",
+        "https://api.cloudinary.com/v1_1/your-cloud-name/image/upload",
         { method: "POST", body: data }
       );
 
